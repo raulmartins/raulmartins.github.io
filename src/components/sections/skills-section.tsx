@@ -270,18 +270,6 @@ export function SkillsSection() {
                   </motion.div>
                 ))}
               </div>
-
-              <div className="mt-8 p-6 bg-primary/5 rounded-lg border border-primary/20">
-                <h3 className="text-lg font-semibold mb-3">
-                  Professional Development
-                </h3>
-                <ul className="space-y-2 list-disc list-inside text-muted-foreground">
-                  <li>PM Live Program from PM School</li>
-                  <li>
-                    Python for Data Science, AI Development from IBM (Coursera)
-                  </li>
-                </ul>
-              </div>
             </div>
           </motion.div>
         </motion.div>
