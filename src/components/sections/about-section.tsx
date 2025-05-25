@@ -84,10 +84,15 @@ export function AboutSection() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold">Software Engineer</h3>
+                  <h3 className="text-xl font-bold">
+                    Scalable Systems and Modern Engineering
+                  </h3>
                   <p className="text-muted-foreground">
-                    Led end-to-end product development of comprehensive SaaS
-                    platforms, from concept through market launch.
+                    With over 10 years of experience in software engineering, I
+                    help companies design and implement robust digital
+                    platforms. I’m passionate about leveraging technology to
+                    solve real-world problems and mentoring teams to achieve
+                    engineering excellence.
                   </p>
                 </CardContent>
               </Card>
@@ -112,10 +117,15 @@ export function AboutSection() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold">Software Engineer</h3>
+                  <h3 className="text-xl font-bold">
+                    Engineering Impact Through Robust Digital Platforms
+                  </h3>
                   <p className="text-muted-foreground">
-                    Conducted stakeholder interviews and competitive analysis to
-                    define product roadmaps and feature prioritization.
+                    Senior Software Engineer specialized in building scalable,
+                    high-performance systems using modern technologies like
+                    React, Next.js, Node.js, and Java. Passionate about software
+                    architecture, clean code, and delivering impactful solutions
+                    aligned with business goals.
                   </p>
                 </CardContent>
               </Card>
@@ -140,11 +150,15 @@ export function AboutSection() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold">Software Engineer</h3>
+                  <h3 className="text-xl font-bold">
+                    Driving Technical Excellence in Collaborative Environments
+                  </h3>
                   <p className="text-muted-foreground">
-                    Built and managed lead systems, CRMs, websites, and in-house
-                    distribution applications for internal and external
-                    stakeholders.
+                    Experienced Software Engineer with a strong background in
+                    system architecture, frontend and backend development.
+                    Skilled in React, Next.js, Node.js, and Java. I thrive in
+                    collaborative environments, driving technical decisions and
+                    ensuring high-quality, maintainable code.
                   </p>
                 </CardContent>
               </Card>
