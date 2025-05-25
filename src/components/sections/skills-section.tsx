@@ -3,69 +3,139 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import Image from 'next/image';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import Image from "next/image";
 
 // Skills data grouped by category
 const skillsData = [
   {
-    category: "Product Management",
-    skills: [
-      { name: "Product Strategy", level: 95 },
-      { name: "Roadmap Planning", level: 90 },
-      { name: "User Story Mapping", level: 85 },
-      { name: "Agile Methodologies", level: 90 },
-      { name: "Stakeholder Management", level: 95 },
-      { name: "Competitive Analysis", level: 85 },
-    ],
-  },
-  {
     category: "Technical Skills",
     skills: [
-      { name: "CRM Systems", level: 85 },
-      { name: "SaaS Platforms", level: 90 },
-      { name: "API Integrations", level: 80 },
-      { name: "Data Analysis", level: 75 },
-      { name: "SQL", level: 70 },
-      { name: "UX/UI Design", level: 65 },
+      // Frontend
+      { name: "JavaScript", level: 85 },
+      { name: "TypeScript", level: 85 },
+      { name: "React", level: 85 },
+      { name: "Next.js", level: 90 },
+      { name: "Microfrontends", level: 80 },
+      { name: "Styled Components", level: 80 },
+      { name: "Tailwind CSS", level: 80 },
+
+      // Backend
+      { name: "Node.js", level: 80 },
+      { name: "Java", level: 80 },
+      { name: "Spring Boot", level: 75 },
+      { name: "REST APIs", level: 85 },
+      { name: "RabbitMQ", level: 75 },
+      { name: "SQL", level: 75 },
+      { name: "NoSQL Databases", level: 70 },
+
+      // Architecture & Practices
+      { name: "Clean Architecture", level: 85 },
+      { name: "Domain-Driven Design (DDD)", level: 80 },
+      { name: "Test-Driven Development (TDD)", level: 80 },
+
+      // Testing
+      { name: "Unit Testing", level: 85 },
+      { name: "End-to-End Testing (E2E)", level: 80 },
+      { name: "Jest", level: 85 },
+      { name: "Testing Library", level: 80 },
+      { name: "Cypress", level: 75 },
+
+      // DevOps & Tools
+      { name: "Git", level: 80 },
+      { name: "GitHub", level: 80 },
+      { name: "Azure DevOps", level: 75 },
+      { name: "AWS", level: 75 },
+      { name: "Docker", level: 75 },
+      { name: "Kubernetes", level: 70 },
     ],
   },
   {
-    category: "Business Skills",
+    category: "Monitoring and Observability",
     skills: [
-      { name: "Market Research", level: 80 },
-      { name: "User Interviews", level: 85 },
-      { name: "Financial Analysis", level: 75 },
-      { name: "Business Modeling", level: 80 },
-      { name: "Growth Strategy", level: 85 },
-      { name: "KPI Definition", level: 90 },
+      { name: "Datadog", level: 50 },
+      { name: "New Relic", level: 60 },
+      { name: "Dynatrace", level: 60 },
     ],
   },
   {
     category: "Soft Skills",
     skills: [
       { name: "Communication", level: 95 },
-      { name: "Leadership", level: 90 },
+      { name: "Leadership", level: 70 },
       { name: "Problem Solving", level: 85 },
       { name: "Negotiation", level: 80 },
       { name: "Team Building", level: 85 },
-      { name: "Presentation", level: 90 },
+      { name: "Presentation", level: 80 },
     ],
   },
 ];
 
 // Tool skills with logos
 const toolSkills = [
-  { name: "Jira", logo: "https://cdn.prod.website-files.com/63be620d63863b897c02c28a/657089e8aebb8caa8b9bfd5f_atlassian_jira_logo_icon_170511.png" },
-  { name: "Confluence", logo: "https://cdn.worldvectorlogo.com/logos/confluence-1.svg" },
-  { name: "Trello", logo: "https://cdn.worldvectorlogo.com/logos/trello.svg" },
-  { name: "Notion", logo: "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" },
-  { name: "Postman", logo: "/images/logos/postman-logo.png" },
-  { name: "Google Analytics", logo: "https://cdn.worldvectorlogo.com/logos/google-analytics-4.svg" },
-  { name: "Figma", logo: "/images/logos/figma-logo.png" },
-  { name: "Power BI", logo: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" },
-  { name: "Slack", logo: "https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg" },
-  { name: "Miro", logo: "https://cdn.worldvectorlogo.com/logos/miro-2.svg" },
+  { name: "Git", logo: "https://cdn.worldvectorlogo.com/logos/git-icon.svg" },
+  {
+    name: "GitHub",
+    logo: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+  },
+  {
+    name: "Postman",
+    logo: "/images/postman.png",
+  },
+  {
+    name: "VS Code",
+    logo: "https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg",
+  },
+  {
+    name: "Datadog",
+    logo: "https://cdn.worldvectorlogo.com/logos/datadog.svg",
+  },
+  {
+    name: "New Relic",
+    logo: "https://cdn.worldvectorlogo.com/logos/new-relic.svg",
+  },
+  { name: "Docker", logo: "https://cdn.worldvectorlogo.com/logos/docker.svg" },
+
+  {
+    name: "Azure DevOps",
+    logo: "https://cdn.worldvectorlogo.com/logos/microsoft-azure-3.svg",
+  },
+  {
+    name: "RabbitMQ",
+    logo: "/images/rabbitmq.png",
+  },
+
+  { name: "React", logo: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+  { name: "Redux", logo: "https://cdn.worldvectorlogo.com/logos/redux.svg" },
+  {
+    name: "Next.js",
+    logo: "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg",
+  },
+  {
+    name: "JavaScript",
+    logo: "/images/JS.png",
+  },
+  {
+    name: "TypeScript",
+    logo: "https://cdn.worldvectorlogo.com/logos/typescript.svg",
+  },
+  {
+    name: "Clean Code",
+    logo: "/images/cleanCode.png",
+  },
+  {
+    name: "Clean Architecture",
+    logo: "/images/cleanArch.png",
+  },
+  {
+    name: "SOLID Principles",
+    logo: "/images/solid.png",
+  },
 ];
 
 export function SkillsSection() {
@@ -111,23 +181,32 @@ export function SkillsSection() {
           animate={inView ? "visible" : "hidden"}
           className="space-y-12"
         >
-          <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto">
+          <motion.div
+            variants={itemVariants}
+            className="text-center max-w-3xl mx-auto"
+          >
             <h2 className="text-3xl font-bold mb-4">My Skills & Expertise</h2>
             <div className="h-1 w-24 bg-primary mx-auto mb-8" />
             <p className="text-lg text-muted-foreground">
-              A comprehensive overview of my product management skills, technical
-              capabilities, and business acumen developed over years of
-              experience.
+              A comprehensive overview of my product management skills,
+              technical capabilities, and business acumen developed over years
+              of experience.
             </p>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <motion.div
+            variants={itemVariants}
+            className="grid grid-cols-1 lg:grid-cols-2 gap-8"
+          >
             <div className="space-y-8">
               <h3 className="text-xl font-semibold">Core Competencies</h3>
 
               <Accordion type="single" collapsible className="w-full">
                 {skillsData.map((category, index) => (
-                  <AccordionItem key={category.category} value={category.category}>
+                  <AccordionItem
+                    key={category.category}
+                    value={category.category}
+                  >
                     <AccordionTrigger className="text-lg font-medium hover:text-primary">
                       {category.category}
                     </AccordionTrigger>
@@ -137,7 +216,9 @@ export function SkillsSection() {
                           <div key={skill.name} className="space-y-1">
                             <div className="flex justify-between">
                               <span className="text-sm">{skill.name}</span>
-                              <span className="text-xs text-muted-foreground">{skill.level}%</span>
+                              <span className="text-xs text-muted-foreground">
+                                {skill.level}%
+                              </span>
                             </div>
                             <div className="h-2 w-full bg-muted rounded-full overflow-hidden">
                               <motion.div
@@ -170,9 +251,9 @@ export function SkillsSection() {
                         scale: 1,
                         transition: {
                           duration: 0.4,
-                          delay: 0.05
-                        }
-                      }
+                          delay: 0.05,
+                        },
+                      },
                     }}
                     className="flex items-center p-4 bg-card rounded-lg shadow-sm border border-border/60 hover:border-primary/30 transition-colors"
                   >
@@ -191,10 +272,14 @@ export function SkillsSection() {
               </div>
 
               <div className="mt-8 p-6 bg-primary/5 rounded-lg border border-primary/20">
-                <h3 className="text-lg font-semibold mb-3">Professional Development</h3>
+                <h3 className="text-lg font-semibold mb-3">
+                  Professional Development
+                </h3>
                 <ul className="space-y-2 list-disc list-inside text-muted-foreground">
                   <li>PM Live Program from PM School</li>
-                  <li>Python for Data Science, AI Development from IBM (Coursera)</li>
+                  <li>
+                    Python for Data Science, AI Development from IBM (Coursera)
+                  </li>
                 </ul>
               </div>
             </div>
