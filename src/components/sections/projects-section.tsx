@@ -13,68 +13,79 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const projects = [
   {
     id: 1,
-    title: "Lead Management System",
+    title: "Customer Experience Platform - CX Studio",
     description:
-      "A comprehensive SaaS platform for managing leads and customer relationships.",
-    image: "https://ext.same-assets.com/3045938532/3583831919.png",
-    tags: ["Product Management", "SaaS", "CRM"],
+      "Scalable platform for managing customer experiences and data at Mercado Livre.",
+    image: "/images/mercadolivre.png",
+    tags: ["CX", "Microservices", "Observability"],
     details: {
       overview:
-        "Led end-to-end product development of a comprehensive SaaS platform for lead management, from concept through market launch.",
+        "Collaborated in the development of CX Studio, a scalable customer experience platform with enhanced observability and data modeling.",
       challenges:
-        "Needed to integrate with multiple existing systems while ensuring data consistency and real-time updates.",
+        "Needed to ensure data consistency and performance while integrating multiple services and improving user experience.",
       solutions:
-        "Implemented a modular architecture with API-first approach, allowing seamless integration with third-party systems.",
+        "Designed robust data models and implemented observability with Datadog and New Relic for proactive monitoring.",
       results:
-        "30% improvement in lead conversion rates, 40% reduction in follow-up time, significantly improved user satisfaction metrics.",
-      technologies: ["React", "Node.js", "MongoDB", "REST APIs", "AWS"],
+        "Improved customer experience through faster response times and increased system reliability, supporting millions of transactions.",
+      technologies: ["React", "Next.js", "Node.js", "Datadog", "New Relic"],
     },
   },
   {
     id: 2,
-    title: "Internal CRM System",
+    title: "XP Empresas Client Onboarding System",
     description:
-      "Custom CRM solution designed for internal teams to manage customer relationships.",
-    image: "https://ext.same-assets.com/3045938532/2155871720.png",
-    tags: ["CRM", "Workflow Automation", "Internal Tools"],
+      "Client onboarding solution supporting multiple brands within XP Inc.",
+    image: "/images/xpempresas.png",
+    tags: ["FinTech", "Client Onboarding", "Enterprise Software"],
     details: {
       overview:
-        "Designed and managed the development of a custom CRM solution for internal teams with integrated workflow automation.",
+        "Led architectural design and implementation of the client onboarding system, ensuring scalability and compliance across brands.",
       challenges:
-        "Teams were using disconnected tools, leading to data silos and inefficient workflows.",
+        "Needed to integrate with CRM (Salesforce) and existing databases while ensuring data integrity and compliance.",
       solutions:
-        "Created a unified platform with centralized data and customizable workflows for different departments.",
+        "Designed a modular architecture with seamless Salesforce integration and implemented automated data validation.",
       results:
-        "50% reduction in administrative tasks, improved data quality, and better cross-department collaboration.",
-      technologies: ["Vue.js", "Python", "PostgreSQL", "Docker", "CI/CD"],
+        "Reduced client onboarding time by 40%, increased data accuracy, and improved internal operational efficiency.",
+      technologies: ["Node.js", "React", "Next.js", "Azure", "RabbitMQ"],
     },
   },
   {
     id: 3,
-    title: "Distribution Application",
+    title: "API Management for Telecom Services",
     description:
-      "In-house distribution application for both internal and external stakeholders.",
-    image: "https://ext.same-assets.com/3045938532/147450772.png",
-    tags: ["Distribution", "Enterprise Software", "B2B"],
+      "Reusable and scalable REST APIs for major telecom providers at OSF Global and iFactory.",
+    image: "/images/claro.png",
+    tags: ["Telecom", "API Development", "Microservices"],
     details: {
       overview:
-        "Built in-house distribution applications for both internal and external stakeholders with integrated dialer solution.",
+        "Developed RESTful APIs adhering to TMForum standards, ensuring reusability and scalability for telecom services.",
       challenges:
-        "Complex distribution requirements across different channels with varying compliance needs.",
+        "Had to design APIs capable of serving multiple applications while maintaining strict performance and monitoring standards.",
       solutions:
-        "Implemented a rule-based engine for handling distribution logic and compliance requirements.",
+        "Implemented APIs with robust monitoring via Dynatrace and automated deployment pipelines for reliable operations.",
       results:
-        "Expanded distribution network by 35%, improved compliance tracking, and reduced onboarding time by 60%.",
-      technologies: ["Angular", "Java Spring Boot", "MySQL", "Elasticsearch", "Kubernetes"],
+        "Enhanced service reliability, reduced contact rate by improving user experience, and optimized system monitoring.",
+      technologies: [
+        "Java",
+        "Spring Boot",
+        "ZUP API Manager",
+        "Dynatrace",
+        "Microservices",
+      ],
     },
   },
 ];
-
 export function ProjectsSection() {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -120,7 +131,10 @@ export function ProjectsSection() {
           animate={inView ? "visible" : "hidden"}
           className="space-y-12"
         >
-          <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto">
+          <motion.div
+            variants={itemVariants}
+            className="text-center max-w-3xl mx-auto"
+          >
             <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
             <div className="h-1 w-24 bg-primary mx-auto mb-8" />
             <p className="text-lg text-muted-foreground">
@@ -187,31 +201,41 @@ export function ProjectsSection() {
                           </div>
                           <div className="space-y-4">
                             <div>
-                              <h3 className="text-lg font-semibold mb-2">Overview</h3>
+                              <h3 className="text-lg font-semibold mb-2">
+                                Overview
+                              </h3>
                               <p className="text-muted-foreground">
                                 {project.details.overview}
                               </p>
                             </div>
                             <div>
-                              <h3 className="text-lg font-semibold mb-2">Challenges</h3>
+                              <h3 className="text-lg font-semibold mb-2">
+                                Challenges
+                              </h3>
                               <p className="text-muted-foreground">
                                 {project.details.challenges}
                               </p>
                             </div>
                             <div>
-                              <h3 className="text-lg font-semibold mb-2">Solutions</h3>
+                              <h3 className="text-lg font-semibold mb-2">
+                                Solutions
+                              </h3>
                               <p className="text-muted-foreground">
                                 {project.details.solutions}
                               </p>
                             </div>
                             <div>
-                              <h3 className="text-lg font-semibold mb-2">Results</h3>
+                              <h3 className="text-lg font-semibold mb-2">
+                                Results
+                              </h3>
                               <p className="text-muted-foreground">
                                 {project.details.results}
                               </p>
                             </div>
                             <div>
-                              <h3 className="text-lg font-semibold mb-2">Technologies</h3>
+                              <h3 className="text-lg font-semibold mb-2">
+                                Technologies
+                              </h3>
                               <div className="flex flex-wrap gap-2">
                                 {project.details.technologies.map((tech) => (
                                   <span
