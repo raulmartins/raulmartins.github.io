@@ -1,26 +1,27 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-import ClientBody from "./ClientBody";
+import StyledComponentsRegistry from "@/lib/registry";
+import { StyledThemeProvider } from "@/styles/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Raul Martins | Software Engineer |  Portfolio",
-  description:
-    "Software Engineer Portfolio of Raul Martins, showcasing experience at Quod and product development expertise.",
+  title: "Raul Martins - Portfolio",
+  description: "Portfolio pessoal de Raul Martins, desenvolvedor Full Stack",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={cn(inter.className, "min-h-screen bg-background")}>
-        <ClientBody>{children}</ClientBody>
+    <html lang="pt-BR">
+      <body className={inter.className}>
+        <StyledComponentsRegistry>
+          <StyledThemeProvider>{children}</StyledThemeProvider>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
