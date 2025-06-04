@@ -1,0 +1,19 @@
+{
+    "navigation": {
+      "home": "Início",
+      "about": "Sobre",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+    "home": {
+      "title": "Olá, eu sou Raul Martins",
+      "subtitle": "Desenvolvedor Full Stack",
+      "description": "Bem-vindo ao meu portfólio"
+    },
+    "language": {
+      "select": "Selecionar idioma",
+      "pt": "Português",
+      "en": "Inglês",
+      "switch": "Alternar para {{lang}}"
+    }
+  }

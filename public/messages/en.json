@@ -1,0 +1,19 @@
+{
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "home": {
+      "title": "Hi, I'm Raul Martins",
+      "subtitle": "Full Stack Developer",
+      "description": "Welcome to my portfolio"
+    },
+    "language": {
+      "select": "Select language",
+      "pt": "Portuguese",
+      "en": "English",
+      "switch": "Switch to {{lang}}"
+    }
+  }
