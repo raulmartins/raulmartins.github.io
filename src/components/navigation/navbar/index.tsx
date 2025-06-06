@@ -24,7 +24,7 @@ const navItems = [
   { name: "Contact", href: "#contact" },
 ];
 
-export function Navbar() {
+export default function Navbar() {
   const { scrollY } = useScroll();
   const [scrolled, setScrolled] = useState(false);
 
