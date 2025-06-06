@@ -9,7 +9,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
   html {
     scroll-behavior: smooth;
- 
+    background: #f9fafb
   }
 `;
 
