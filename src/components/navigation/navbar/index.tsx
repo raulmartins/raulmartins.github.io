@@ -5,6 +5,7 @@ import { useScroll } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import { trackResumeClick } from "@/lib/analytics";
 import {
   Header,
   Container,
@@ -38,6 +39,10 @@ export default function Navbar() {
     };
   }, [scrollY]);
 
+  const handleResumeClick = () => {
+    trackResumeClick();
+  };
+
   return (
     <Header
       $scrolled={scrolled}
@@ -57,7 +62,11 @@ export default function Navbar() {
               {item.name}
             </NavLink>
           ))}
-          <ResumeButton href="/resume/profile.pdf" download="profile.pdf">
+          <ResumeButton
+            href="/resume/profile.pdf"
+            download="profile.pdf"
+            onClick={handleResumeClick}
+          >
             Download Resume
           </ResumeButton>
         </DesktopNav>
@@ -76,7 +85,11 @@ export default function Navbar() {
                   {item.name}
                 </NavLink>
               ))}
-              <ResumeButton href="/resume/profile.pdf" download="profile.pdf">
+              <ResumeButton
+                href="/resume/profile.pdf"
+                download="profile.pdf"
+                onClick={handleResumeClick}
+              >
                 Download Resume
               </ResumeButton>
             </MobileNav>
