@@ -16,14 +16,15 @@ export const trackEvent = (action: string, category: string, label: string) => {
     window.gtag("event", action, {
       event_category: category,
       event_label: label,
+      page_path: window.location.href,
     });
   }
 };
 
 // Função específica para rastrear cliques no resume
 export const trackClick = (action: string) => {
-  console.log("trackClick", action);
-  trackEvent("click", action, "Click");
+  console.log("trackClick", window.location.href);
+  trackEvent("click", action, action);
 };
 
 // Declaração do tipo global para o gtag
