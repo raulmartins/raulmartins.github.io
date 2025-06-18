@@ -21,8 +21,9 @@ export const trackEvent = (action: string, category: string, label: string) => {
 };
 
 // Função específica para rastrear cliques no resume
-export const trackResumeClick = () => {
-  trackEvent("click", "Resume", "Download Resume");
+export const trackClick = (action: string) => {
+  console.log("trackClick", action);
+  trackEvent("click", action, "Click");
 };
 
 // Declaração do tipo global para o gtag

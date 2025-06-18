@@ -5,7 +5,7 @@ import { useScroll } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import { trackResumeClick } from "@/lib/analytics";
+import { trackClick } from "@/lib/analytics";
 import {
   Header,
   Container,
@@ -40,7 +40,7 @@ export default function Navbar() {
   }, [scrollY]);
 
   const handleResumeClick = () => {
-    trackResumeClick();
+    trackClick("Download Resume");
   };
 
   return (
@@ -51,14 +51,18 @@ export default function Navbar() {
       transition={{ duration: 0.3 }}
     >
       <Container>
-        <NavLink href="/">
+        <NavLink onClick={() => trackClick("Logo Portfolio")} href="/">
           <Logo>Portfolio</Logo>
         </NavLink>
 
         {/* Desktop navigation */}
         <DesktopNav>
           {navItems.map((item) => (
-            <NavLink key={item.name} href={item.href}>
+            <NavLink
+              onClick={() => trackClick(item.name)}
+              key={item.name}
+              href={item.href}
+            >
               {item.name}
             </NavLink>
           ))}
@@ -81,7 +85,11 @@ export default function Navbar() {
           <SheetContent>
             <MobileNav>
               {navItems.map((item) => (
-                <NavLink key={item.name} href={item.href}>
+                <NavLink
+                  onClick={() => trackClick(item.name)}
+                  key={item.name}
+                  href={item.href}
+                >
                   {item.name}
                 </NavLink>
               ))}

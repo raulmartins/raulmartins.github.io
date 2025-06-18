@@ -1,3 +1,4 @@
+import { trackClick } from "@/lib/analytics";
 import { useState } from "react";
 
 interface ContactFormData {
@@ -40,6 +41,9 @@ export function useContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    trackClick(
+      `Send Message from name: ${formState.formData.name} email: ${formState.formData.email} and message: ${formState.formData.message} `
+    );
     setFormState((prev) => ({ ...prev, isSubmitting: true, error: null }));
 
     try {
