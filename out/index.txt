@@ -1,27 +1,29 @@
 1:"$Sreact.fragment"
-2:I[7786,["848","static/chunks/848-0cc5043209474bf3.js","177","static/chunks/app/layout-d98acff0b69167c3.js"],"default"]
-3:I[7555,[],""]
-4:I[1295,[],""]
-5:I[80,["848","static/chunks/848-0cc5043209474bf3.js","39","static/chunks/39-7be137f77eac04af.js","974","static/chunks/app/page-6f7a9c614d33e3e6.js"],"Navbar"]
-6:I[8957,["848","static/chunks/848-0cc5043209474bf3.js","39","static/chunks/39-7be137f77eac04af.js","974","static/chunks/app/page-6f7a9c614d33e3e6.js"],"HeroSection"]
-7:I[8156,["848","static/chunks/848-0cc5043209474bf3.js","39","static/chunks/39-7be137f77eac04af.js","974","static/chunks/app/page-6f7a9c614d33e3e6.js"],"AboutSection"]
-8:I[2273,["848","static/chunks/848-0cc5043209474bf3.js","39","static/chunks/39-7be137f77eac04af.js","974","static/chunks/app/page-6f7a9c614d33e3e6.js"],"ExperienceSection"]
-9:I[5822,["848","static/chunks/848-0cc5043209474bf3.js","39","static/chunks/39-7be137f77eac04af.js","974","static/chunks/app/page-6f7a9c614d33e3e6.js"],"ProjectsSection"]
-a:I[1543,["848","static/chunks/848-0cc5043209474bf3.js","39","static/chunks/39-7be137f77eac04af.js","974","static/chunks/app/page-6f7a9c614d33e3e6.js"],"SkillsSection"]
-b:I[2756,["848","static/chunks/848-0cc5043209474bf3.js","39","static/chunks/39-7be137f77eac04af.js","974","static/chunks/app/page-6f7a9c614d33e3e6.js"],"FooterSection"]
-c:I[9665,[],"MetadataBoundary"]
-e:I[9665,[],"OutletBoundary"]
-11:I[4911,[],"AsyncMetadataOutlet"]
-13:I[9665,[],"ViewportBoundary"]
-15:I[6614,[],""]
-:HL["/_next/static/media/a34f9d1faa5f3315-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/css/bbda8f54ac1b11d5.css","style"]
-0:{"P":null,"b":"5IdlD1wCOyQh06OZJSoPe","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/bbda8f54ac1b11d5.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"__className_d65c78 min-h-screen bg-background","children":["$","$L2",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","main",null,{"className":"flex min-h-screen flex-col","children":[["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}],["$","$La",null,{}],["$","$Lb",null,{}]]}],["$","$Lc",null,{"children":"$Ld"}],null,["$","$Le",null,{"children":["$Lf","$L10",["$","$L11",null,{"promise":"$@12"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","TbPyBe4tPnsxBkA43oUcF",{"children":[["$","$L13",null,{"children":"$L14"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],null]}],false]],"m":"$undefined","G":["$15","$undefined"],"s":false,"S":true}
-16:"$Sreact.suspense"
-17:I[4911,[],"AsyncMetadata"]
-d:["$","$16",null,{"fallback":null,"children":["$","$L17",null,{"promise":"$@18"}]}]
-10:null
-14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-f:null
-18:{"metadata":[["$","title","0",{"children":"Raul Martins | Software Engineer |  Portfolio"}],["$","meta","1",{"name":"description","content":"Software Engineer Portfolio of Raul Martins, showcasing experience at Quod and product development expertise."}]],"error":null,"digest":"$undefined"}
-12:{"metadata":"$18:metadata","error":null,"digest":"$undefined"}
+2:I[9243,["987","static/chunks/987-077e235d37459099.js","177","static/chunks/app/layout-0c6007106e49fdc8.js"],""]
+3:I[9415,["987","static/chunks/987-077e235d37459099.js","177","static/chunks/app/layout-0c6007106e49fdc8.js"],"default"]
+4:I[9662,["987","static/chunks/987-077e235d37459099.js","177","static/chunks/app/layout-0c6007106e49fdc8.js"],"StyledThemeProvider"]
+5:I[7555,[],""]
+6:I[1295,[],""]
+7:I[467,["987","static/chunks/987-077e235d37459099.js","51","static/chunks/51-8869c9b98023c8fe.js","974","static/chunks/app/page-77f482a5909e19c2.js"],"default"]
+8:I[5418,["987","static/chunks/987-077e235d37459099.js","51","static/chunks/51-8869c9b98023c8fe.js","974","static/chunks/app/page-77f482a5909e19c2.js"],"default"]
+9:I[3490,["987","static/chunks/987-077e235d37459099.js","51","static/chunks/51-8869c9b98023c8fe.js","974","static/chunks/app/page-77f482a5909e19c2.js"],"default"]
+a:I[3827,["987","static/chunks/987-077e235d37459099.js","51","static/chunks/51-8869c9b98023c8fe.js","974","static/chunks/app/page-77f482a5909e19c2.js"],"default"]
+b:I[9449,["987","static/chunks/987-077e235d37459099.js","51","static/chunks/51-8869c9b98023c8fe.js","974","static/chunks/app/page-77f482a5909e19c2.js"],"default"]
+c:I[4474,["987","static/chunks/987-077e235d37459099.js","51","static/chunks/51-8869c9b98023c8fe.js","974","static/chunks/app/page-77f482a5909e19c2.js"],"default"]
+d:I[728,["987","static/chunks/987-077e235d37459099.js","51","static/chunks/51-8869c9b98023c8fe.js","974","static/chunks/app/page-77f482a5909e19c2.js"],"default"]
+e:I[9665,[],"MetadataBoundary"]
+10:I[9665,[],"OutletBoundary"]
+13:I[4911,[],"AsyncMetadataOutlet"]
+15:I[9665,[],"ViewportBoundary"]
+17:I[6614,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/d8482dc65fc84ba6.css","style"]
+0:{"P":null,"b":"oN6TTsp9HImzaGIe_Q0gs","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d8482dc65fc84ba6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"pt-BR","children":[["$","head",null,{"children":[["$","$L2",null,{"strategy":"afterInteractive","src":"https://www.googletagmanager.com/gtag/js?id=G-M4XP874STB"}],["$","$L2",null,{"id":"google-analytics","strategy":"afterInteractive","dangerouslySetInnerHTML":{"__html":"\n                  window.dataLayer = window.dataLayer || [];\n                  function gtag(){dataLayer.push(arguments);}\n                  gtag('js', new Date());\n                  gtag('config', 'G-M4XP874STB');\n                "}}]]}],["$","body",null,{"className":"__className_e8ce0c","children":["$","$L3",null,{"children":["$","$L4",null,{"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","main",null,{"className":"flex min-h-screen flex-col","children":[["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}],["$","$La",null,{}],["$","$Lb",null,{}],["$","$Lc",null,{}],["$","$Ld",null,{}]]}],["$","$Le",null,{"children":"$Lf"}],null,["$","$L10",null,{"children":["$L11","$L12",["$","$L13",null,{"promise":"$@14"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","ff1YBVkB5_S5BXKTirbn6",{"children":[["$","$L15",null,{"children":"$L16"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],null]}],false]],"m":"$undefined","G":["$17","$undefined"],"s":false,"S":true}
+18:"$Sreact.suspense"
+19:I[4911,[],"AsyncMetadata"]
+f:["$","$18",null,{"fallback":null,"children":["$","$L19",null,{"promise":"$@1a"}]}]
+12:null
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:null
+1a:{"metadata":[["$","title","0",{"children":"Raul Martins - Portfolio"}],["$","meta","1",{"name":"description","content":"Portfolio pessoal de Raul Martins, desenvolvedor Full Stack"}]],"error":null,"digest":"$undefined"}
+14:{"metadata":"$1a:metadata","error":null,"digest":"$undefined"}

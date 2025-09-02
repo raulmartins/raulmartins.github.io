@@ -1,26 +1,53 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-import ClientBody from "./ClientBody";
+import StyledComponentsRegistry from "@/lib/registry";
+import { StyledThemeProvider } from "@/styles/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// ID do Google Analytics
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID;
+
 export const metadata: Metadata = {
-  title: "Raul Martins | Software Engineer |  Portfolio",
-  description:
-    "Software Engineer Portfolio of Raul Martins, showcasing experience at Quod and product development expertise.",
+  title: "Raul Martins - Portfolio",
+  description: "Portfolio pessoal de Raul Martins, desenvolvedor Full Stack",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={cn(inter.className, "min-h-screen bg-background")}>
-        <ClientBody>{children}</ClientBody>
+    <html lang="pt-BR">
+      <head>
+        {GA_MEASUREMENT_ID && (
+          <>
+            <Script
+              strategy="afterInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+            />
+            <Script
+              id="google-analytics"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${GA_MEASUREMENT_ID}');
+                `,
+              }}
+            />
+          </>
+        )}
+      </head>
+      <body className={inter.className}>
+        <StyledComponentsRegistry>
+          <StyledThemeProvider>{children}</StyledThemeProvider>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

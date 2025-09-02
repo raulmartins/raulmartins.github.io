@@ -6,8 +6,11 @@
     "dev": "next dev -H 0.0.0.0 --turbopack",
     "build": "next build",
     "start": "next start",
+    "export": "next build && next export",
     "lint": "bunx biome lint --write && bunx tsc --noEmit",
-    "format": "bunx biome format --write"
+    "format": "bunx biome format --write",
+    "deploy": "gh-pages -d out",
+    "preview": "npx serve out"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.4",
@@ -26,6 +29,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-intersection-observer": "^9.16.0",
+    "styled-components": "^6.1.18",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7",
     "yarn": "^1.22.22"
@@ -36,8 +40,10 @@
     "@types/node": "^20",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
+    "@types/styled-components": "^5.1.34",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
+    "gh-pages": "^6.3.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
